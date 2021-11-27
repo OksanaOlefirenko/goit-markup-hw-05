@@ -650,8 +650,8 @@ img {
 }
 
 .backdrop.is-hidden .modal {
-  transform: scale(1.5) rotate(180deg);
-  transition: transform 250ms;
+  transform: translate(-50%, -50%) scale(1.5) rotate(180deg);
+  transition: transform 250ms var(--timing-function);
 }
 
 .modal {
@@ -664,9 +664,8 @@ img {
   border-radius: 4px;
   top: 50%;
   left: 50%;
-  transform: scale(1) rotate(0);
-  transform: translate(-50%, -50%);
-  transition: transform 250ms;
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  transition: transform 250ms var(--timing-function);
 }
 
 .modal-close {
